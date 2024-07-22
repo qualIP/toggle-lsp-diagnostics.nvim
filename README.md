@@ -1,27 +1,35 @@
-# ARCHIVED
+# Original plugin archived
 
-This plugin has been archived. There isn't much reason for this plugin anymore.
-Toggling the diagnostics for all buffers is made very simple by the current Lua
-API. e.g. what I currently use to toggle all diagnostics on/off is this:
+The original author, @WhoIsSethDaniel, has archived his repo. Here's why:
 
-```lua
-map(
-  'n',
-  '<leader>td',
-  (function()
-    local diag_status = 1 -- 1 is show; 0 is hide
-    return function()
-      if diag_status == 1 then
-        diag_status = 0
-        vim.diagnostic.hide()
-      else
-        diag_status = 1
-        vim.diagnostic.show()
-      end
-    end
-  end)()
-)
-```
+> This plugin has been archived. There isn't much reason for this plugin anymore.
+> Toggling the diagnostics for all buffers is made very simple by the current Lua
+> API. e.g. what I currently use to toggle all diagnostics on/off is this:
+>
+> ```lua
+> map(
+>   'n',
+>   '<leader>td',
+>   (function()
+>     local diag_status = 1 -- 1 is show; 0 is hide
+>     return function()
+>       if diag_status == 1 then
+>         diag_status = 0
+>         vim.diagnostic.hide()
+>       else
+>         diag_status = 1
+>         vim.diagnostic.show()
+>       end
+>     end
+>   end)()
+> )
+> ```
+
+I think this plugin offers more possibilities than just hide & show and I
+intend to keep using it and surely enhance it to include the improved builtin
+Neovim APIs. Issues for bug fixes and suggestions are welcome, as well as PRs.
+
+-- @jstrot
 
 # Description
 
