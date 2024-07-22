@@ -141,8 +141,8 @@ nmap <leader>tlp <Plug>(toggle-lsp-diag-update_in_insert)
 
 nmap <leader>tld  <Plug>(toggle-lsp-diag)
 nmap <leader>tldd <Plug>(toggle-lsp-diag-default)
-nmap <leader>tldo <Plug>(toggle-lsp-diag-off)
-nmap <leader>tldf <Plug>(toggle-lsp-diag-on)
+nmap <leader>tldo <Plug>(toggle-lsp-diag-on)
+nmap <leader>tldf <Plug>(toggle-lsp-diag-off)
 ```
 
 ## Commands
